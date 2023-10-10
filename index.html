@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperatura</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main>
+        <article>
+            <select id="unidad1" name="select">
+                <option value="Kelvin">Kelvin</option>
+                <option value="Centigrados" selected>Centigrados</option>
+                <option value="Farenheit">Farenheit</option>
+            </select>
+            <ion-icon id="change" name="swap-horizontal-outline"></ion-icon>
+            <select id="unidad2" name="select">
+                <option value="Kelvin" selected>Kelvin</option>
+                <option value="Centigrados">Centigrados</option>
+                <option value="Farenheit">Farenheit</option>
+            </select>
+        </article>
+
+        <input id="gradosUsuario" type="text" placeholder="Grados">
+
+        <button id="button1">Convertir</button>
+
+        <p id="resultado"></p>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script defer src="./script.js"></script>
+</body>
+</html>
